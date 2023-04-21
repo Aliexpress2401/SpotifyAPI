@@ -1,0 +1,27 @@
+.thumbnail {
+  min-height: 210px;
+  background: #212121;
+
+  &.thumbnail-number {
+    background: #1DB954;
+    text-align:center;
+
+    & .title {
+      font-size: 100px;
+    }
+  }
+
+  &.thumbnail-green {
+    background: #1DB954;
+  }
+
+  &.thumbnail-image {
+    background-image: url("../../../favicon.ico");
+    background-repeat: no-repeat;
+    text-align: end;
+  }
+}
+
+.pad-left {
+  margin-left: 10px;
+}

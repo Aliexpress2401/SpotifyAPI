@@ -1,0 +1,10 @@
+<h1><b> YOUR INFO </b></h1>
+<hr />
+
+<h4><b>Name: </b> {{(userInfo$|async)?.display_name}}</h4>
+<h4><b>E-mail: </b>{{(userInfo$|async)?.email}}</h4>
+<h4><b>Id: </b>{{(userInfo$|async)?.id}}</h4>
+<h4><b>Country: </b>{{(userInfo$|async)?.country}}</h4>
+<h4><b>Followers: </b>{{(userInfo$|async)?.followers}}</h4>
+<h4><b>Type of subscription: </b>{{(userInfo$|async)?.product}}</h4>
+<h4><b>Uri: </b>{{(userInfo$|async)?.uri}}</h4>

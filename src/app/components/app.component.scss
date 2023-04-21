@@ -1,0 +1,13 @@
+.background-color {
+  background-color: #191414;
+
+  .container {
+    .navigation-container {
+      height: 40px;
+    }
+
+    .routing-container {
+      height: calc(100vh - 40px);
+    }
+  }
+}
