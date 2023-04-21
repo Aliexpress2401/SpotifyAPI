@@ -4,7 +4,7 @@ Helloooooooo!!!!!!!!!!!!
 
 I made a Spotify API for you!
 
-In the environment.ts file you need to paste your client_id and client_secret so you are ready to go!
+In the environment.ts file you need to paste your client_id and client_secret, so you are ready to go!
 
 Spotify Documentation: https://developer.spotify.com/documentation/web-api
 
