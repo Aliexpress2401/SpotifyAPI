@@ -40,7 +40,7 @@ const DASHBOARDS: IDashboard[] = [
   },
   {
     id: 5,
-    type: 'greenlinks',
+    type: 'links',
     title: 'Playlists',
     route: 'playlists',
     description: 'Look Your Saved Playlists'
@@ -60,16 +60,16 @@ const DASHBOARDS: IDashboard[] = [
   {
     id: 8,
     type: 'links',
-    title: 'Your Podcast',
+    title: 'Podcast',
     route: 'podcasts',
     description: 'Look Your Saved Podcasts'
   },
   {
     id: 9,
     type: 'links',
-    title: 'Your New',
+    title: 'Tracks',
     route: 'tracks',
-    description: 'Saved Tracks'
+    description: 'Look Your Saved Tracks'
   },
   {
     id: 10,

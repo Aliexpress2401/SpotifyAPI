@@ -39,8 +39,7 @@
       <div class="navbar-header navbar-right">
         <ul class="nav navbar-nav">
           <li>
-            <a>{{(userInfo$|async)?.display_name}}</a>
-            <!--<a>display_name dell'user'</a>-->
+            <a [routerLink]="['/home']">{{(userInfo$|async)?.display_name}}</a>
           </li>
         </ul>
       </div>

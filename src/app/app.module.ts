@@ -60,7 +60,7 @@ import { UserComponent } from './components/user/user.component';
       provide: APP_INITIALIZER,
       useFactory: (repository: RepositoryService, session: SessionService) =>
         () => {
-          if (window.location.href.indexOf('login')) {
+          if (window.location.href.indexOf('login') !=-1) {
             return of()
           }
           return repository.getUserInfo()
