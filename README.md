@@ -1,4 +1,18 @@
-# SpotifyAngular
+# SpotifyAPI
+
+Helloooooooo!!!!!!!!!!!!
+
+I made a Spotify API for you!
+
+In the environment.ts file you need to paste your client_id and client_secret so you are ready to go!
+
+Spotify Documentation: https://developer.spotify.com/documentation/web-api
+
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
@@ -25,4 +39,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# SpotifyAPI
+
