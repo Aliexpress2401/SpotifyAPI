@@ -1,5 +1,5 @@
 export const environment = {
-  production: true,
+  production: false,
 
   client_id: '{{spotify_client_id}}',
   client_secret: '{{spotify_client_secret}}',
