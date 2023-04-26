@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "heroku-prebuild": "node heroku-config.js",
-    "heroku-postbuild": "npm run build && node -e \"require('fs').rename('dist/spotify-angular/index.html', 'dist/spotify-angular/index.php', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\""
+    "heroku-postbuild": "ng build && node -e \"require('fs').rename('dist/spotify-angular/index.html', 'dist/spotify-angular/index.php', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\""
   },
   "private": true,
   "dependencies": {
