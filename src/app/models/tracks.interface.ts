@@ -3,7 +3,9 @@ export interface Tracks {
   limit: number;
   offset: number;
 
-  //endpoint 'https://api.spotify.com/v1/me/tracks'
+  total: number;
+  items: [added_at: string, track: object];
+
 }
 
 // get user's saved tracks per la documentazione

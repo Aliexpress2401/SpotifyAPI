@@ -1,10 +1,15 @@
 <h1><b> YOUR INFO </b></h1>
 <hr />
 
-<h4><b>Name: </b> {{(userInfo$|async)?.display_name}}</h4>
+<h3> HERE YOU CAN FIND ALL YOUR INFO! </h3>
+
+<!--MANCA L'IMMAGINE-->
+
+<h4>sistema l'immagine e il follower: {{(userInfo$|async)?.image}}</h4>
+<h4><b>UserName: </b> {{(userInfo$|async)?.display_name}}</h4>
 <h4><b>E-mail: </b>{{(userInfo$|async)?.email}}</h4>
 <h4><b>Id: </b>{{(userInfo$|async)?.id}}</h4>
 <h4><b>Country: </b>{{(userInfo$|async)?.country}}</h4>
 <h4><b>Followers: </b>{{(userInfo$|async)?.followers}}</h4>
 <h4><b>Type of subscription: </b>{{(userInfo$|async)?.product}}</h4>
-<h4><b>Uri: </b>{{(userInfo$|async)?.uri}}</h4>
+<h4><b>Url: </b>{{(userInfo$|async)?.href}}</h4>

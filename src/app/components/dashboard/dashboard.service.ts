@@ -16,7 +16,7 @@ const DASHBOARDS: IDashboard[] = [
   {
     id: 1,
     type: 'links',
-    title: 'Albums',
+    title: 'ALBUM',
     route: 'albums',
     description: 'Look Your Saved Albums'
   },
@@ -28,28 +28,29 @@ const DASHBOARDS: IDashboard[] = [
   },
   {
     id: 3,
-    type: 'image',
-    title: 'Top Hits',
-    description: 'Italy 2023'
+    type: 'links',
+    title: 'PLAYLIST',
+    route: 'playlists',
+    description: 'Look Your Saved Playlists'
   },
   {
     id: 4,
+    type: 'image1',
+    title: '',
+    description: ''
+  },
+  {
+    id: 5,
     type: 'number',
     title: '100',
     description: 'New Release Every Week'
   },
   {
-    id: 5,
-    type: 'links',
-    title: 'Playlists',
-    route: 'playlists',
-    description: 'Look Your Saved Playlists'
-  },
-  {
     id: 6,
-    type: 'image',
-    title: 'New Music',
-    description: 'Friday'
+    type: 'links',
+    title: 'TRACKS',
+    route: 'tracks',
+    description: 'Look Your Saved Tracks'
   },
   {
     id: 7,
@@ -60,33 +61,32 @@ const DASHBOARDS: IDashboard[] = [
   {
     id: 8,
     type: 'links',
-    title: 'Podcast',
+    title: 'PODCAST',
     route: 'podcasts',
     description: 'Look Your Saved Podcasts'
   },
   {
     id: 9,
-    type: 'links',
-    title: 'Tracks',
-    route: 'tracks',
-    description: 'Look Your Saved Tracks'
+    type: 'image2',
+    title: '',
+    description: ''
   },
   {
     id: 10,
     type: 'number',
     title: '5',
-    description: 'Raccomended Song Based On Your Top 5 Tracks'         
+    description: 'Raccomended Song'         
   },
   {
     id: 11,
     type: 'links',
-    title: 'Get Your Top 5 Tracks ',
+    title: 'GET YOUR TOP 5 TRACKS ',
     description: 'From The Last 30 Days'
   },
   {
     id: 12,
     type: 'greenlinks',
-    title: 'Get Your',
+    title: 'GET YOUR',
     route: 'you',
     description: 'User Profile'
   }

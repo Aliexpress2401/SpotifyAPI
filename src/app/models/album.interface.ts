@@ -3,7 +3,9 @@ export interface Albums {
   offset: number;
   market: string;
 
-  href: string;
+  total: number;
+  items: [added_at: string, album: object];
+
   
 }
 

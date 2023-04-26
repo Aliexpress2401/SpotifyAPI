@@ -1,13 +1,16 @@
 .thumbnail {
   min-height: 210px;
   background: #212121;
+  text-align: center;
+  font-weight: bold;
 
   &.thumbnail-number {
     background: #1DB954;
-    text-align:center;
+    text-align: center;
 
     & .title {
       font-size: 100px;
+      font-weight: bold;
     }
   }
 
@@ -15,10 +18,18 @@
     background: #1DB954;
   }
 
-  &.thumbnail-image {
-    background-image: url("../../../favicon.ico");
+  &.thumbnail-image1 {
+    background-image: url("../../../assets/images/playlist1.png");
     background-repeat: no-repeat;
-    text-align: end;
+    background-position: center;
+    text-align: center;
+  }
+
+  &.thumbnail-image2 {
+    background-image: url("../../../assets/images/playlist2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
   }
 }
 

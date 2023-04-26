@@ -18,7 +18,12 @@ import { Component, Input } from '@angular/core'
     <div>{{dashboard?.description}}</div>
     </div>
 
-    <div *ngIf="dashboard.type=='image'" class="well howerwell thumbnail thumbnail-image">
+    <div *ngIf="dashboard.type=='image1'" class="well howerwell thumbnail thumbnail-image1">
+    <h1 class="title">{{dashboard?.title}}</h1>
+    <div>{{dashboard?.description}}</div>
+    </div>
+
+    <div *ngIf="dashboard.type=='image2'" class="well howerwell thumbnail thumbnail-image2">
     <h1 class="title">{{dashboard?.title}}</h1>
     <div>{{dashboard?.description}}</div>
     </div>

@@ -24,4 +24,5 @@ export class DashboardComponent implements OnInit{
   public thumbnailClick(id: number, route?: string): void {
     this.router.navigate(['dashboard', id, route ])
   }
+
 }

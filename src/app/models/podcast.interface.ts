@@ -3,7 +3,9 @@ export interface Podcast {
   limit: number;
   offset: number;
 
-  //endpoint: 'https://api.spotify.com/v1/me/episodes'
+  total: number;
+  items: [added_at: string, episode: object];
+
 }
 
 // get user's saved episodes per la documentazione
