@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "heroku-prebuild": "node heroku-config.js",
+    "local-start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+   // "start": "ng serve",
+    "heroku-prebuild": "node heroku-config.js",
+    "heroku-postbuild": "npm run build && node -e \"require('fs').rename('dist/spotify-angular/index.html', 'dist/spotify-angular/index.php', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\""
   },
   "private": true,
   "dependencies": {
