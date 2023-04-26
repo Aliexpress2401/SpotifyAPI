@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/SpotifyAngular'));
 
 app.get('/*', function (req, res) {
 
-  res.sendFile(path.join(__dirname + '/dist/SpotifyAngular/index.php'));
+  res.sendFile(path.join(__dirname + '/dist/SpotifyAngular/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
