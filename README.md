@@ -14,3 +14,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ![home](https://user-images.githubusercontent.com/114669268/233660397-0fa18097-cd32-467c-9c4f-f3181bac16ca.png)
+![dashboard](https://user-images.githubusercontent.com/114669268/234789562-f55cc4a0-42fe-4ae0-a2ec-a094767b5d50.png)
