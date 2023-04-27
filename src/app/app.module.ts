@@ -23,6 +23,7 @@ import { TrackComponent } from './components/track/track.component';
 import { of, tap } from 'rxjs';
 import { SessionService } from './services/session.service';
 import { UserComponent } from './components/user/user.component';
+import { CallInterceptor } from './call.interceptor';
 
 
 @NgModule({
@@ -68,6 +69,11 @@ import { UserComponent } from './components/user/user.component';
             .toPromise();
         },
       deps: [RepositoryService, SessionService],
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: CallInterceptor,
       multi: true
     },
   ],
