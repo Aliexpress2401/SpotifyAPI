@@ -4,7 +4,7 @@
 
   <h3> HERE YOU CAN FIND ALL YOUR SAVED ALBUMS AND SOME INFO! </h3>
 
-  <h6><b>Total Album: </b> {{albums?.total}} </h6>
+  <h6><b>TOTAL ALBUM: </b> {{albums?.total}} </h6>
   <br>
 
   <div>
@@ -12,14 +12,13 @@
       <thead>
         <tr>
           <th scope="row"> </th>
-          <th scope="row">Album Name: </th>
-          <th scope="row">Artist Name: </th>
-          <th scope="row">Release Date:</th>
-          <th scope="row">Added At:</th>
-          <th scope="row">Total tracks:</th>
-          <th scope="row">External Url:</th>
-          <th scope="row">Id:</th>
-
+          <th scope="row">ALBUM </th>
+          <th scope="row">ARTIST </th>
+          <th scope="row">RELEASE DATE </th>
+          <th scope="row">ADDED AT </th>
+          <th scope="row">TOTAL TRACKS </th>
+          <th scope="row">ID</th>
+          <th scope="row">URL</th>
         </tr>
       </thead>
       <tbody>
@@ -30,8 +29,8 @@
           <td>{{album?.album.release_date}}</td>
           <td>{{album.added_at}}</td>
           <td>{{album.album.total_tracks}}</td>
-          <td>{{album.album.external_urls.spotify}}</td>
           <td>{{album.album.id}}</td>
+          <td>{{album.album.external_urls.spotify}}</td>
         </tr>
       </tbody>
     </table>

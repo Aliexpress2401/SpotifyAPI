@@ -6,11 +6,35 @@
 <br />
 <img [src]="(getImage$()|async)" />
 <br />
+<br />
 
-<h4><b>UserName: </b> {{(userInfo$|async)?.display_name}}</h4>
-<h4><b>E-mail: </b> {{(userInfo$|async)?.email}}</h4>
-<h4><b>Id: </b> {{(userInfo$|async)?.id}}</h4>
-<h4><b>Country: </b> {{(userInfo$|async)?.country}}</h4>
-<h4><b>Followers: </b> {{(userInfo$|async)?.followers?.total}}</h4>
-<h4><b>Type of subscription: </b> {{(userInfo$|async)?.product}}</h4>
-<h4><b>Url: </b> {{(userInfo$|async)?.href}}</h4>
+<table class="table">
+  <tr>
+    <td><b>USERNAME: </b></td>
+    <td>{{(userInfo$|async)?.display_name}}</td>
+  </tr>
+  <tr>
+    <td><b>E-MAIL: </b></td>
+    <td>{{(userInfo$|async)?.email}}</td>
+  </tr>
+  <tr>
+    <td><b>ID: </b></td>
+    <td>{{(userInfo$|async)?.id}}</td>
+  </tr>
+  <tr>
+    <td><b>COUNTRY: </b></td>
+    <td>{{(userInfo$|async)?.country}}</td>
+  </tr>
+  <tr>
+    <td><b>FOLLOWERS: </b></td>
+    <td>{{(userInfo$|async)?.followers?.total}}</td>
+  </tr>
+  <tr>
+    <td><b>TYPE OF SUBSCRIPTION: </b></td>
+    <td>{{(userInfo$|async)?.product}}</td>
+  </tr>
+  <tr>
+    <td><b>URL: </b></td>
+    <td>{{(userInfo$|async)?.href}}</td>
+  </tr>
+</table>
