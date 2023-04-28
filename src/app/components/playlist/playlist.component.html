@@ -23,7 +23,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let playlist of playlists?.items">
-          <td><img [src]="getImage(playlist)" /></td>
+          <td><img class="img" [src]="getImage(playlist)" /></td>
           <td>{{playlist?.name}}</td>
           <td>{{playlist?.owner.display_name}}</td>
           <td>{{playlist?.description}}</td>

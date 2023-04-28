@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { IDashboard } from '../../models/dashboard.interface';
 import { DashboardService } from './dashboard.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { DashboardService } from './dashboard.service';
 })
 
 export class DashboardComponent implements OnInit{
-  dashboards: any
+  public dashboards: IDashboard[] = [];
 
   constructor(private dashboardService: DashboardService, private router: Router) {
     

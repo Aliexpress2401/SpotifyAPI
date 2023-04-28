@@ -25,7 +25,7 @@ export class TrackComponent implements OnInit {
 
   public getArtist(track: Track): string {
 
-    return track.track.artist?.find(artist => artist.name)?.name ?? ""
+    return track.track.artists?.map(artist => artist.name).join(",") ?? ""
   }
 
 }

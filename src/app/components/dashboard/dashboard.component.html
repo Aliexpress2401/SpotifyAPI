@@ -4,7 +4,10 @@
   <hr />
   <div class="row">
     <div *ngFor="let dashboard of dashboards" (click)="thumbnailClick(dashboard.id, dashboard.route)" class="col-md-3">
-      <dashboard-thumbnail  [dashboard]="dashboard"></dashboard-thumbnail>
+      <dashboard-thumbnail [dashboard]="dashboard"></dashboard-thumbnail>
     </div>
   </div>
 </div>
+
+
+

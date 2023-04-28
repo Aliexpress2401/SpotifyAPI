@@ -18,7 +18,9 @@ export const appRoutes: Routes = [
       { path: 'playlists', component: PlaylistComponent },
       { path: 'podcasts', component: PodcastComponent },
       { path: 'tracks', component: TrackComponent },
-      { path: 'you', component: UserComponent },]
+      { path: 'you', component: UserComponent },
+      { path: 'image1', component: UserComponent },
+      { path: 'image2', component: UserComponent },]
   },
 
   { path: '', pathMatch: "full", redirectTo: 'home' }

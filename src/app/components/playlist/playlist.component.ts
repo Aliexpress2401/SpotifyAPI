@@ -21,6 +21,6 @@ export class PlaylistComponent implements OnInit {
 
   public getImage(playlist: Playlist): string {
 
-    return playlist.images?.find(image => image.height == 64)?.url ?? ""
+    return playlist.images?.find(image => image.url != null)?.url ?? ""
   }
 }

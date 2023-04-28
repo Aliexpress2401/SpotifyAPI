@@ -18,21 +18,21 @@
     background: #1DB954;
   }
 
-  &.thumbnail-image1 {
-    background-image: url("../../../assets/images/playlist1.png");
+  &.thumbnail-image {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
   }
 
-  &.thumbnail-image2 {
-    background-image: url("../../../assets/images/playlist2.png");
+  &.thumbnail-image:hover {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    width: 120%;
+    height: 120%;
   }
+ 
 }
-
 .pad-left {
   margin-left: 10px;
 }

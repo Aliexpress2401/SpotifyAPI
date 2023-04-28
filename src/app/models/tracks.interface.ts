@@ -19,7 +19,7 @@ export interface Info {
   explicit: boolean;
   popularity: number;
   album: Album;
-  artist: Artist[];
+  artists: Artist[];
 
 }
 
