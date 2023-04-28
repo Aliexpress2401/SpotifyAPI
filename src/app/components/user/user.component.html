@@ -3,11 +3,14 @@
 
 <h3> HERE YOU CAN FIND ALL YOUR INFO! </h3>
 
-<h4>sistema l'immagine e il follower: {{(userInfo$|async)?.image}}</h4><!--SISTEMA-->
+<br />
+<img [src]="(getImage$()|async)" />
+<br />
+
 <h4><b>UserName: </b> {{(userInfo$|async)?.display_name}}</h4>
-<h4><b>E-mail: </b>{{(userInfo$|async)?.email}}</h4>
-<h4><b>Id: </b>{{(userInfo$|async)?.id}}</h4>
-<h4><b>Country: </b>{{(userInfo$|async)?.country}}</h4>
-<h4><b>Followers: </b>{{(userInfo$|async)?.followers}}</h4>
-<h4><b>Type of subscription: </b>{{(userInfo$|async)?.product}}</h4>
-<h4><b>Url: </b>{{(userInfo$|async)?.href}}</h4>
+<h4><b>E-mail: </b> {{(userInfo$|async)?.email}}</h4>
+<h4><b>Id: </b> {{(userInfo$|async)?.id}}</h4>
+<h4><b>Country: </b> {{(userInfo$|async)?.country}}</h4>
+<h4><b>Followers: </b> {{(userInfo$|async)?.followers?.total}}</h4>
+<h4><b>Type of subscription: </b> {{(userInfo$|async)?.product}}</h4>
+<h4><b>Url: </b> {{(userInfo$|async)?.href}}</h4>

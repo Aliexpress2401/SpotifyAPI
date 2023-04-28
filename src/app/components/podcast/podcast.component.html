@@ -1,15 +1,37 @@
-<h1><b> YOUR SAVED PODCAST </b></h1>
-<hr />
+<div class="background">
+  <h1><b> YOUR SAVED PODCAST </b></h1>
+  <hr />
 
-<h3> HERE YOU CAN FIND ALL YOUR SAVED PODCAST AND SOME INFO! </h3>
+  <h3> HERE YOU CAN FIND ALL YOUR SAVED PODCAST AND SOME INFO! </h3>
 
-<h6><b>Total Podcast: </b> </h6>
-<br />
+  <h6><b>Total Podcast: </b> {{episodes?.total}}</h6>
+  <br />
 
-<h4><b>Items: </b></h4>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="row"> </th>
+          <th scope="row">Name: </th>
+          <th scope="row">Description: </th>
+          <th scope="row">Duration:</th>
+          <th scope="row">Release Date:</th>
+          <th scope="row">Language:</th>
+          <th scope="row">Id:</th>
 
-<h4><b>Images: </b> </h4>
-<h4><b>PodcastName: </b> </h4>
-<h4><b>Description: </b> </h4>
-<h4><b>Id: </b> </h4>
-<h4><b>Language: </b> </h4>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let episode of episodes?.items">
+          <td><img [src]="getImage(episode)" /></td>
+          <td>{{episode?.episode.name}}</td>
+          <td>{{episode?.episode.description}}</td>
+          <td>{{episode?.episode.duration_ms}} ms</td>
+          <td>{{episode?.episode.release_date}}</td>
+          <td>{{episode?.episode.language}}</td>
+          <td>{{episode?.episode.id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

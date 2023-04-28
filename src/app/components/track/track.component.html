@@ -1,16 +1,37 @@
-<h1><b> YOUR SAVED TRACKS </b></h1>
-<hr />
+<div class="background">
+  <h1><b> YOUR SAVED TRACKS </b></h1>
+  <hr />
 
-<h3> HERE YOU CAN FIND ALL YOUR SAVED TRACKS AND SOME INFO! </h3>
+  <h3> HERE YOU CAN FIND ALL YOUR SAVED TRACKS AND SOME INFO! </h3>
 
-<h6><b>Total Tracks: </b> </h6>
-<br />
+  <h6><b>Total Tracks: </b>{{tracks?.total}}</h6>
+  <br />
 
-<h4><b>Items:</b> </h4>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="row"> </th>
+          <th scope="row">Track Name: </th>
+          <th scope="row">Album: </th>
+          <th scope="row">Artist: </th>
+          <th scope="row">Duration:</th>
+          <th scope="row">Popularity:</th>
+          <th scope="row">Id:</th>
 
-<h4><b>Track:</b> </h4>
-
-<h4><b>Id:</b> </h4><h4><b>TrackName:</b> </h4>
-<h4><b>Album:</b> </h4> <h4><b>Artist:</b> </h4>
-<h4><b>Added At:</b> </h4> <h4><b>Duration:</b> </h4>
-
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let track of tracks?.items">
+          <td><img [src]="getImage(track)" /></td>
+          <td>{{track?.track.name}}</td>
+          <td>{{track?.track.album.name}}</td>
+          <td>{{getArtist(track)}}</td>
+          <td>{{track?.track.duration_ms}} ms</td>
+          <td>{{track?.track.popularity}}</td>
+          <td>{{track?.track.id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

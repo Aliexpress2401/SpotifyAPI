@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Subject } from 'rxjs';
+import { first, map, Observable, Subject } from 'rxjs';
 import { User } from '../../models/user.interface';
 import { SessionService } from '../../services/session.service';
 
@@ -16,4 +16,9 @@ export class UserComponent {
     
   }
 
+  public getImage$(): Observable<string> {
+
+
+    return this.userInfo$.pipe(first(), map(u => u.images != null && u.images.length>0? u.images[0].url:""))
+  }
 }

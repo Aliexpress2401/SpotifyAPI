@@ -1,18 +1,38 @@
-<h1><b>YOUR SAVED PLAYLIST</b></h1>
-<hr />
+<div class="background">
+  <h1><b>YOUR SAVED PLAYLIST</b></h1>
+  <hr />
 
-<h3> HERE YOU CAN FIND ALL YOUR SAVED PLAYLIST AND SOME INFO! </h3>
+  <h3> HERE YOU CAN FIND ALL YOUR SAVED PLAYLIST AND SOME INFO! </h3>
 
-<h6><b>Total Playlist: </b> </h6>
-<br />
+  <h6><b>Total Playlist: </b> {{ playlists?.total}}</h6>
+  <br />
 
-<h4><b>Items: </b> </h4>
-
-<h4><b>Id: </b> </h4>
-<h4><b>Image: </b> </h4>
-<h4><b>name: </b> </h4>
-<h4><b>OwnerName: </b> </h4>
-<h4><b>Description: </b> </h4>
-<h4><b>Collaborative: </b> </h4>
-<h4><b>Public: </b> </h4>
-<h4><b>Collaborative: </b> </h4>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="row"> </th>
+          <th scope="row">Playlist Name: </th>
+          <th scope="row">Owner: </th>
+          <th scope="row">Description:</th>
+          <th scope="row">Tracks:</th>
+          <th scope="row">Collaborative:</th>
+          <th scope="row">Id:</th>
+          <th scope="row">External Url:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let playlist of playlists?.items">
+          <td><img [src]="getImage(playlist)" /></td>
+          <td>{{playlist?.name}}</td>
+          <td>{{playlist?.owner.display_name}}</td>
+          <td>{{playlist?.description}}</td>
+          <td>{{playlist?.tracks.total}}</td>
+          <td>{{playlist?.collaborative}}</td>
+          <td>{{playlist?.id}}</td>
+          <td>{{playlist?.external_urls.spotify}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

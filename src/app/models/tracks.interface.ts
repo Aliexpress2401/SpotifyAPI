@@ -1,11 +1,35 @@
+import { Image } from "./user.interface";
+
 export interface Tracks {
-  market: string;
-  limit: number;
-  offset: number;
-
+ 
   total: number;
-  items: [added_at: string, track: object];
+  items: Track[];
 
+}
+
+export interface Track {
+  added_at: string;
+  track: Info;
+}
+
+export interface Info {
+  id: string;
+  name: string;
+  duration_ms: number;
+  explicit: boolean;
+  popularity: number;
+  album: Album;
+  artist: Artist[];
+
+}
+
+export interface Album {
+  name: string;
+  images: Image[];
+}
+
+export interface Artist {
+  name: string;
 }
 
 // get user's saved tracks per la documentazione

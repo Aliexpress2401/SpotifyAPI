@@ -1,21 +1,39 @@
-<h1><b> YOUR SAVED ALBUMS </b></h1>
-<hr />
+<div class="background">
+  <h1><b> YOUR SAVED ALBUMS </b></h1>
+  <hr />
 
-<h3> HERE YOU CAN FIND ALL YOUR SAVED ALBUMS AND SOME INFO! </h3>
+  <h3> HERE YOU CAN FIND ALL YOUR SAVED ALBUMS AND SOME INFO! </h3>
 
-<h6><b>Total Album: </b>{{(userAlbum$|async)?.total}} </h6>
-<br>
+  <h6><b>Total Album: </b> {{albums?.total}} </h6>
+  <br>
 
-<h4><b>Items: </b> </h4>
+  <div>
+    <table class="table" >
+      <thead>
+        <tr>
+          <th scope="row"> </th>
+          <th scope="row">Album Name: </th>
+          <th scope="row">Artist Name: </th>
+          <th scope="row">Release Date:</th>
+          <th scope="row">Added At:</th>
+          <th scope="row">Total tracks:</th>
+          <th scope="row">External Url:</th>
+          <th scope="row">Id:</th>
 
-<h4><b>Image: </b> </h4>
-<h4><b>AlbumName: </b> </h4>
-<h4><b>ArtistName: </b> </h4>
-<h4><b>release Date: </b> </h4>
-<h4><b>Added At: </b> </h4>
-<h4><b>Total tracks: </b> </h4>
-<h4><b>External Url: </b> </h4>
-<h4><b>Id: </b> </h4>
-<h4><b>Genres: </b> </h4>
-
-<!--per ogni album-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let album of albums?.items">
+          <td><img [src]="getImage(album)" /></td>
+          <td>{{album?.album.name}}</td>
+          <td>{{getArtist(album)}}</td>
+          <td>{{album?.album.release_date}}</td>
+          <td>{{album.added_at}}</td>
+          <td>{{album.album.total_tracks}}</td>
+          <td>{{album.album.external_urls.spotify}}</td>
+          <td>{{album.album.id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

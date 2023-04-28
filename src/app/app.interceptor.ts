@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor, HttpResponse } from '@angular/common/http';
-import { catchError, finalize, map, Observable, of, tap, throwError } from 'rxjs';
-import { environment } from '../environments/environment';
+import { catchError, finalize, Observable, of, throwError } from 'rxjs';
 import { SessionService } from './services/session.service';
 import { Router } from '@angular/router';
 
