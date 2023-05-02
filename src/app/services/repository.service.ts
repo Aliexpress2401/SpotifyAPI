@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { AccessToken } from '../models/access-token.interface';
-import { Album, Albums } from '../models/album.interface';
+import { Albums } from '../models/album.interface';
 import { Playlists } from '../models/playlist.interface';
 import { Episodes } from '../models/podcast.interface';
 import { Tracks } from '../models/tracks.interface';

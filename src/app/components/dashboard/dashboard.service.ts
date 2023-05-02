@@ -85,6 +85,7 @@ const DASHBOARDS: IDashboard[] = [
     id: 11,
     type: 'links',
     title: 'GET YOUR TOP 5 TRACKS ',
+    route: 'top5',
     description: 'From The Last 30 Days'
   },
   {

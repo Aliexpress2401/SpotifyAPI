@@ -1,2 +1,4 @@
 C:\Users\alice.crudele\Documents\Spotify\Spotify\SpotifyAngular\obj\Debug\SpotifyAngular.esproj.SuggestedBindingRedirects.cache
 C:\Users\alice.crudele\Documents\Spotify\Spotify\SpotifyAngular\obj\Debug\SpotifyAngular.esproj.CoreCompileInputs.cache
+C:\Users\alice.crudele\Documents\4. Spotify\Spotify\SpotifyAngular\obj\Debug\SpotifyAngular.esproj.SuggestedBindingRedirects.cache
+C:\Users\alice.crudele\Documents\4. Spotify\Spotify\SpotifyAngular\obj\Debug\SpotifyAngular.esproj.CoreCompileInputs.cache

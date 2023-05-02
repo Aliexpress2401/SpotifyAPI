@@ -1,9 +1,16 @@
-export interface newRelease {
-  country: string;
-  limit: number;
-  offset: number;
+export interface TopSong {
 
-  //endpoint: 'https://api.spotify.com/v1/browse/new-releases'
+  total: number;
+  items: Song[];
 }
 
-// get new release per la documentazione
+export interface Song {
+  name: string;
+  artists: Artist;
+}
+
+export interface Artist {
+  name: string;
+}
+
+// get top 5 tracks per la documentazione
