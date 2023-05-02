@@ -37,7 +37,7 @@ const DASHBOARDS: IDashboard[] = [
     id: 4,
     type: 'image',
     title: '',
-    route: 'https://open.spotify.com/playlist/0njnvMkgsTb0wL8BFDwAGS',
+    route: 'https://open.spotify.com/playlist/3FxQXWmgBxhaU9zsAUQykk',
     imageUrl: 'assets/images/playlist1.png',
     description: ''
   },
@@ -71,7 +71,7 @@ const DASHBOARDS: IDashboard[] = [
     id: 9,
     type: 'image',
     title: '',
-    route: 'https://open.spotify.com/playlist/3a7rjnQwaLOHrOiYE99h1y',
+    route: 'https://open.spotify.com/playlist/5jV0L1ZOxZXTZOfRZOsdxc',
     imageUrl: 'assets/images/playlist2.png',
     description: ''
   },
