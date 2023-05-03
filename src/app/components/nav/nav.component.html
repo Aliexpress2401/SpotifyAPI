@@ -39,11 +39,23 @@
       <div class="navbar-header navbar-right">
         <ul class="nav navbar-nav">
           <li>
-            <a [routerLink]="['/dashboard/12/you']">{{(userInfo$|async)?.display_name}}</a>
+            <div class="dropdown">
+              <p>{{(userInfo$|async)?.display_name}}</p>
+              <div class="dropdown-content">
+                <a [routerLink]="['/dashboard/12/you']"> Profile </a>
+                <br />
+                <br />
+                <a href="https://www.spotify.com/it/account/overview/?utm_source=spotify&utm_medium=menu&utm_campaign=your_account">Account Type</a>
+                <br />
+                <br />
+                <a href="https://www.spotify.com/it/download/windows/">Download</a>
+                <hr />
+                <a [routerLink]="['/home']">LogOut</a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
-
 
     </div>
   </div>
