@@ -3,11 +3,12 @@ h1 {
 }
 
 td {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 img{
-    height: 25%;
+    height: 40%;
+    border-radius: 10px;
 }
 
 //Scrollbar
@@ -33,17 +34,4 @@ img{
   border-radius: 10px;
   height: 100px;
 }
-
-//Button
-.botlogout {
-  position: absolute;
-  border-radius: 40px;
-  border: none;
-  color: #191414;
-  background-color: #1DB954;
-  width: 7%;
-  height: 5%;
-  font-weight: bold;
-}
-
 

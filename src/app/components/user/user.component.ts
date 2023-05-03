@@ -24,8 +24,5 @@ export class UserComponent {
   }
 
 
-  public logOut(): void {
-    window.location.search == null && window.location.search == "";
-    this.router.navigate(['home'])
-  }
+  
 }
