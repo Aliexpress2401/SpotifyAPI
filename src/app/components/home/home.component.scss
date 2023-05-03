@@ -10,15 +10,19 @@
 
 
 .botlogin {
-  position: absolute;
+  position: relative;
   top: 85%;
-  left: 40%;
+  left: 45%;
   border-radius: 40px;
   border: none;
   color: #1DB954;
   background-color: #191414;
   width: 12%;
   height: 7%;
+  align-items: center;
 }
 
-
+p{
+    margin-top: 52%;
+    text-align: center;
+}

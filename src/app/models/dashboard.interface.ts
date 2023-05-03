@@ -5,5 +5,4 @@ export interface IDashboard {
   route?: string;
   description: string;
   imageUrl?: string;
-
 }

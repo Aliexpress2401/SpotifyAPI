@@ -1,7 +1,5 @@
-import { Type } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { ReplaySubject, Subject } from 'rxjs';
-import { Albums } from '../models/album.interface';
 import { User } from '../models/user.interface';
 
 @Injectable()

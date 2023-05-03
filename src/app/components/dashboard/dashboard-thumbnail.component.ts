@@ -23,6 +23,7 @@ import { IDashboard } from '../../models/dashboard.interface'
   <h1 class="title">{{dashboard.title}}</h1>
   <div>{{dashboard.description}}</div>
 </a>
+
   `,
   styleUrls: ['dashboard-thumbnail.component.scss']
 })

@@ -28,7 +28,7 @@
           <td>{{playlist?.description}}</td>
           <td>{{playlist?.tracks.total}}</td>
           <td>{{playlist?.id}}</td>
-          <td>{{playlist?.external_urls.spotify}}</td>
+          <td (click)="linkUrl()">{{playlist?.external_urls.spotify}}</td>
         </tr>
       </tbody>
     </table>

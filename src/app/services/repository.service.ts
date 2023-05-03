@@ -39,6 +39,12 @@ export class RepositoryService {
     return this.http.get<User>('https://api.spotify.com/v1/me')
   }
 
+  //FA LA RICHIESTA PER GLI ALBUM
+  public getUserAlbum(): Observable<Albums> {
+    
+    return this.http.get <Albums>('https://api.spotify.com/v1/me/albums?limit=50&offset=0&market=IT')
+  }
+
   //'market': `
   //          "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT",
   //          "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE",
@@ -50,12 +56,6 @@ export class RepositoryService {
   //          "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW"
   //        `
 
-
-  //FA LA RICHIESTA PER GLI ALBUM
-  public getUserAlbum(): Observable<Albums> {
-    
-    return this.http.get <Albums>('https://api.spotify.com/v1/me/albums?limit=50&offset=0&market=IT')
-  }
 
   //FA LA RICHIESTA DELLE PLAYLIST
   public getUserPlaylist(): Observable<Playlists> {

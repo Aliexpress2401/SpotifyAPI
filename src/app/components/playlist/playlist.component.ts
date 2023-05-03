@@ -23,4 +23,11 @@ export class PlaylistComponent implements OnInit {
 
     return playlist.images?.find(image => image.url != null)?.url ?? ""
   }
+
+  public linkUrl(): void {
+
+    window.location.href = 'https://open.spotify.com/playlist/{{playlist?.id}}'
+
+  }
+
 }
