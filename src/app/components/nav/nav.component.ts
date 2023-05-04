@@ -22,7 +22,10 @@ export class NavComponent {
 
   public logOut(): void {
     window.location.search == null && window.location.search == "";
+    this.session.setToken(null);
+    this.session.removeUserInfo();
     this.router.navigate(['home'])
+
   }
 
 }

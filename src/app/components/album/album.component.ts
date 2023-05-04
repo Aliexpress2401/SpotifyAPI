@@ -31,6 +31,12 @@ export class AlbumComponent implements OnInit {
 
     return album.album.artists?.find(artist => artist.name)?.name ?? ""
   }
+
+  public linkUrlAlbum(album: Album): void {
+
+    window.location.href = `https://open.spotify.com/album/${album?.album.id}`
+
+  }
 }
 
 

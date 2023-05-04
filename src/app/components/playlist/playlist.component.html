@@ -12,12 +12,12 @@
       <thead>
         <tr>
           <th scope="row"> </th>
-          <th scope="row">PLAYLIST </th>
-          <th scope="row">OWNER </th>
-          <th scope="row">DESCRIPTION </th>
-          <th scope="row">TRACKS </th>
-          <th scope="row">ID</th>
-          <th scope="row">URL</th>
+          <th scope="row"> PLAYLIST </th>
+          <th scope="row"> OWNER </th>
+          <th scope="row"> DESCRIPTION </th>
+          <th scope="row"> TRACKS </th>
+          <th scope="row"> ID </th>
+          <th scope="row"> URL </th>
         </tr>
       </thead>
       <tbody>
@@ -28,7 +28,7 @@
           <td>{{playlist?.description}}</td>
           <td>{{playlist?.tracks.total}}</td>
           <td>{{playlist?.id}}</td>
-          <td (click)="linkUrl()">{{playlist?.external_urls.spotify}}</td>
+          <td (click)="linkUrlPlaylist()">{{playlist?.external_urls.spotify}}</td>
         </tr>
       </tbody>
     </table>

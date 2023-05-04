@@ -36,5 +36,8 @@ export class SessionService {
     this._userInfo.next(userInfo);
   }
 
+  public removeUserInfo(): void {
+    this._userInfo.next(null as unknown as User);
+  }
 }
 

@@ -12,13 +12,13 @@
       <thead>
         <tr>
           <th scope="row"> </th>
-          <th scope="row">ALBUM </th>
-          <th scope="row">ARTIST </th>
-          <th scope="row">RELEASE DATE </th>
-          <th scope="row">ADDED AT </th>
-          <th scope="row">TOTAL TRACKS </th>
-          <th scope="row">ID</th>
-          <th scope="row">URL</th>
+          <th scope="row"> ALBUM </th>
+          <th scope="row"> ARTIST </th>
+          <th scope="row"> RELEASE DATE </th>
+          <th scope="row"> ADDED AT </th>
+          <th scope="row"> TOTAL TRACKS </th>
+          <th scope="row"> ID </th>
+          <th scope="row"> URL </th>
         </tr>
       </thead>
       <tbody>
@@ -30,7 +30,7 @@
           <td>{{album.added_at}}</td>
           <td>{{album.album.total_tracks}}</td>
           <td>{{album.album.id}}</td>
-          <td>{{album.album.external_urls.spotify}}</td>
+          <td (click)="linkUrlAlbum(album)">{{album.album.external_urls.spotify}}</td>
         </tr>
       </tbody>
     </table>
