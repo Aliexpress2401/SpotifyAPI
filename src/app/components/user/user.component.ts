@@ -20,7 +20,7 @@ export class UserComponent {
   public getImage$(): Observable<string> {
 
 
-    return this.userInfo$.pipe(first(), map(u => u.images != null && u.images.length>0? u.images[0].url:""))
+    return this.userInfo$.pipe(first(), map(u => u.images != null && u.images.length>0? u.images[0].url:'assets/images/Green_Icon.png'))
   }
 
 
